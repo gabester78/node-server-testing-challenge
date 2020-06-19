@@ -22,3 +22,27 @@ For this project you will use `Test Driven Development` to create a RESTful API 
 - use `jest` and `supertest` to write the tests.
 - Your API must be able to **create** and **delete** a _resource_ of your choosing.
 - Write a minimum of two tests per route handler.
+
+npm init -y
+npx gitignore node //only if there is not gitignore in project
+npm i -D nodemon
+npm i express
+npm i knex sqlite3
+npm i knex-cleaner
+npm i cors
+npm i helmet
+npm i dotenv
+npm i bcryptjs
+npm i express-session
+npm i connect-session-knex
+mkdir data
+mkdir schemes
+touch index.js
+touch server.js
+knex init
+cd data
+mkdir migrations
+mkdir seeds
+touch db-config.js
+cd -
+knex migrate:make new_table
